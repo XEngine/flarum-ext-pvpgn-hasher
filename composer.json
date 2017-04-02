@@ -1,30 +1,30 @@
 {
-  name: "xengine/pvpgn_hasher",
-  description: "The file sets the user password algorith replace with pvpgn hashing mechanism.",
-  keywords: [
+  "name": "xengine/flarum-ext-pvpgn-hash-algorithm",
+  "description": "The file sets the user password algorith replace with pvpgn hashing mechanism.",
+  "keywords": [
     "upload",
     "flarum",
     "flagrow",
     "file"
   ],
-  type: "flarum-extension",
-  license: "MIT",
-  require: {
-    flarum/core: "^0.1.0-beta.6"
+  "type": "flarum-extension",
+  "license": "MIT",
+  "require": {
+    "flarum/core": "^0.1.0-beta.6"
   },
-  extra: {
-    flarum-extension: {
-      title: "PVPGN Hasher",
-      icon: {
-        name: "files-o",
-        backgroundColor: "#000",
-        color: "#87d37c"
+  "extra": {
+    "flarum-extension": {
+      "title": "PVPGN Hasher",
+      "icon": {
+        "name": "files-o",
+        "backgroundColor": "#000",
+        "color": "#87d37c"
       }
     }
   },
-  autoload: {
-    psr-4: {
-      XEngine\\PVPGN\\: "src/"
+  "autoload": {
+    "psr-4": {
+      "XEngine\\PVPGN\\": "src/"
     }
   }
 }
