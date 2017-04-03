@@ -3,7 +3,7 @@
 namespace XEngine\PVPGN\Hashers;
 use Illuminate\Contracts\Hashing\Hasher as HasherContract;
 
-class PVPGNHasher extends HasherContract{
+class PVPGNHasher implements HasherContract{
     private static function str2blks_pvpgn($str) {
         $nblk = ((strlen($str) + 8) >> 6) + 1;
         for($i = 0; $i < $nblk * 16; $i++) {
